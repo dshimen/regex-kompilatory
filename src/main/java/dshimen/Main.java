@@ -14,9 +14,9 @@ public class Main {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             dataString = reader.readLine().toLowerCase();
             if(analyzeString(dataString)){
-                System.out.println("Podany ciąg znaków spełania zadany regex");
+                System.out.println("Podany ciąg znaków spełania zadany regex (State A)");
             }else {
-                System.out.println("Podany ciąg nie spełnia zadanego regexu");
+                System.out.println("Podany ciąg nie spełnia zadanego regexu (State N)");
             }
         }
     }

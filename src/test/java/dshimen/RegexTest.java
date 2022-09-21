@@ -28,6 +28,11 @@ public class RegexTest {
         Assert.assertFalse(analyzeString("bbbbbbb"));
         Assert.assertFalse(analyzeString("kompilatory"));
         Assert.assertFalse(analyzeString("uksw"));
+        Assert.assertTrue(analyzeString("bbaa"));
+        Assert.assertTrue(analyzeString("bbba"));
+        Assert.assertTrue(analyzeString("bbb"));
+        Assert.assertFalse(analyzeString("bbab"));
+        Assert.assertFalse(analyzeString("bb"));
         System.out.println("Testy przebiegly poprawnie");
     }
 }

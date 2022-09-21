@@ -40,7 +40,10 @@ public class Main {
                     return false;
                 }
             }else if(dataChar[i] == 'b'){
-                if(state == 2){
+                if(state == 0){
+                    state = 3;
+                }
+                else if(state == 2){
                     state = 3;
                 }else if(state == 3){
                     state = 4;
